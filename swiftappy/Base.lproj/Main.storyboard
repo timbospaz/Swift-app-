@@ -27,31 +27,49 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-QB-a3t">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZkU-QB-a3t">
                                 <rect key="frame" x="164" y="104" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="CLS-eS-Vwt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fy0-Jk-Eus">
-                                <rect key="frame" x="156" y="167" width="63" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button 2 "/>
-                                <connections>
-                                    <action selector="buttonTapped2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kdj-y6-veD"/>
-                                </connections>
-                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="e5U-XF-4uH">
+                                <rect key="frame" x="139" y="288" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="nAy-Xv-IMQ"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Wnt-uu-9cT">
+                                <rect key="frame" x="139" y="235" width="97" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="WZo-jo-tyP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="Wnt-uu-9cT" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1fH-6D-gT4"/>
                             <constraint firstItem="Dji-iI-stu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6jU-4P-Pn1"/>
+                            <constraint firstItem="e5U-XF-4uH" firstAttribute="top" secondItem="Wnt-uu-9cT" secondAttribute="bottom" constant="23" id="HSH-W3-yg0"/>
+                            <constraint firstItem="Wnt-uu-9cT" firstAttribute="centerX" secondItem="ZkU-QB-a3t" secondAttribute="centerX" id="McK-sD-hCm"/>
                             <constraint firstItem="Dji-iI-stu" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="20" id="MoE-E9-nB9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="e5U-XF-4uH" secondAttribute="bottom" constant="349" id="Oze-4b-4PY"/>
+                            <constraint firstItem="Wnt-uu-9cT" firstAttribute="top" secondItem="ZkU-QB-a3t" secondAttribute="bottom" constant="101" id="nk2-sJ-cUq"/>
+                            <constraint firstItem="e5U-XF-4uH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="waU-pz-4SR"/>
+                            <constraint firstItem="e5U-XF-4uH" firstAttribute="top" secondItem="Wnt-uu-9cT" secondAttribute="bottom" constant="23" id="zYe-fr-C5P"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="cooltim" destination="Dji-iI-stu" id="ecm-j6-gVu"/>
+                        <outlet property="text1" destination="Wnt-uu-9cT" id="ts8-bs-CH7"/>
+                        <outlet property="text2" destination="e5U-XF-4uH" id="NLE-ee-A7O"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
