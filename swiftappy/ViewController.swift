@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         tapCount = tapCount + 1
         print(tapCount)
         
-        if tapCount >= 10 {
-            cooltim.text = " you made it to ten"
+        if tapCount >= 20 {
+            cooltim.text = " you made it to twenty"
         }
        }
     
